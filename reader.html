@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comic Reader - GuptaAman777</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Reader Page Styles -->
+  <link rel="stylesheet" href="css/reader.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <span>GuptaAman777</span>
+      </div>
+      <div class="menu-icon" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html#comics">Our Comics</a></li>
+          <li><a href="index.html#chapters">Latest Releases</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="reader-header">
+        <h1 id="chapter-title">Loading Chapter...</h1>
+        <!-- Drop-down menu for chapter selection -->
+        <select id="chapterSelect"></select>
+      </section>
+      
+      <section class="reader-content">
+        <div id="page-container">
+          <!-- All comic page images will be displayed here -->
+        </div>
+        <!-- Pagination buttons now enabled -->
+        <div class="chapter-pagination-bottom">
+          <button id="prevChapter" class="nav-btn">
+            <i class="fas fa-chevron-left"></i> Previous Chapter
+          </button>
+          <span id="chapterInfo">Chapter 0 of 0</span>
+          <button id="nextChapter" class="nav-btn">
+            Next Chapter <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo" />
+          <span>GuptaAman777</span>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#comics">Our Comics</a></li>
+            <li><a href="index.html#chapters">Latest Releases</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://discord.gg/prvHAYFGV7" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/gupta_aman_777" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> GuptaAman777. All rights reserved.</p>
+        <p class="disclaimer">This is a non-profit fan translation group. All comics belong to their respective authors.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reader Page JavaScript -->
+  <script src="js/reader.js"></script>
+</body>
+</html>
