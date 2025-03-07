@@ -2,7 +2,7 @@
   "id": "member-guptaman777",
   "name": "GuptaAman777",
   "avatar": "https://raw.githubusercontent.com/GuptaAman777/guptaaman777-imagehosting/main/team/member1.png",
-  "role": "Translator - Leader",
+  "role": ["Leader", "Translator"],
   "joinDate": "2024-11",
   "about": "Sleeps all day and has a very bad memory",
   "skills": ["Translation", "Localization", "Editing"],
