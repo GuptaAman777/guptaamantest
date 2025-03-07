@@ -81,7 +81,7 @@
   box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
 
-/* Shining Gradient Animation */
+/* Shining Gradient Animation (Only on Hover for Desktops) */
 .nav-btn::before {
   content: "";
   position: absolute;
@@ -91,21 +91,26 @@
   height: 100%;
   background: linear-gradient(120deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 80%);
   transition: left 0.3s;
+  opacity: 0;
 }
 
 .nav-btn:hover::before {
   left: 100%;
   transition: left 0.7s ease-in-out;
+  opacity: 1;
 }
 
-/* Continuous Shining Effect */
+/* Continuous Shining Effect on Mobile (768px and below) */
+@media screen and (max-width: 768px) {
+  .nav-btn::before {
+    animation: shine 2s infinite linear;
+    opacity: 1;
+  }
+}
+
 @keyframes shine {
   0% { left: -100%; }
   100% { left: 100%; }
-}
-
-.nav-btn::before {
-  animation: shine 2s infinite linear;
 }
 
 @media screen and (max-width: 768px) {
